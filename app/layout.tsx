@@ -27,7 +27,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+
+        <header className="border-b border-black/15 dark:border-white/15 fixed top-0 left-0 w-full z-10">
+          <div className="container px-5 h-16 mx-auto flex justify-between items-center">
+            <h1 className="text-xl font-bold">Shorten URL</h1>
+          </div>
+        </header>
+
         {children}
+
       </body>
     </html>
   );
